@@ -6,9 +6,9 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var about=
+var about =
   {
-      aboutapp:
+      'abouta-pp':
       {
           title: "about app",
     heading:"About Us",
@@ -20,7 +20,7 @@ var about=
      </p>
      `
       },
-      aboutp:
+      'about-p':
       {
     title: "about",
     heading:"About application",
