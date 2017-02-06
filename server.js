@@ -29,6 +29,7 @@ function templet(data)
   `
   <html>
    <head>
+   <link href="/ui/style.css" rel="stylesheet" />
    <title> ${title}
 	</title>
 	</head>
