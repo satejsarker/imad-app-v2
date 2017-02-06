@@ -5,7 +5,19 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
+var aboutapplication=
+{
+     title: "about app",
+    heading:"About Us",
+     mobile:"8892726625",
+     content:
+     `<p>soldevanhalli<br>
+     oppsite to axes bank atm <br>
+     chikbanabara,bangalor-560090<br>
+     </p>
+     `
+    
+};
 var about=
   {
     title: "about",
@@ -47,8 +59,8 @@ return htmltem;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/about', function (req, res) {
-  res.send(templet(about));
+app.get('/:aboutName', function (req, res) {
+  res.send(templet(about[aboutName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
