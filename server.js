@@ -34,9 +34,11 @@ function templet(data)
 	</title>
 	</head>
 	<body>
+	<div class="model">
 	${heading}
 	${mobile}
 	${content}
+	</div>
 	</body>
 	</html>
 `;
