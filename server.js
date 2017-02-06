@@ -5,6 +5,21 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var about=
+  {
+    title: "about",
+    heading:"About Us",
+     mobile:"8892726625",
+     content:
+     `<adress>soldevanhalli<br>
+     oppsite to axes bank atm <br>
+     chikbanabara,bangalor-560090<br>
+     </adress>
+     `
+    
+    };
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
