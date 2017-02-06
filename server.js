@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var about =
   {
-      'abouta-pp':
+      'about-pp':
       {
           title: "about app",
     heading:"About Us",
