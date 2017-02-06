@@ -12,10 +12,10 @@ var about=
     heading:"About Us",
      mobile:"8892726625",
      content:
-     `<adress>soldevanhalli<br>
+     `<p>soldevanhalli<br>
      oppsite to axes bank atm <br>
      chikbanabara,bangalor-560090<br>
-     </adress>
+     </p>
      `
     
     };
