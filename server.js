@@ -5,22 +5,12 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var aboutapplication=
-{
-     title: "about app",
-    heading:"About Us",
-     mobile:"8892726625",
-     content:
-     `<p>soldevanhalli<br>
-     oppsite to axes bank atm <br>
-     chikbanabara,bangalor-560090<br>
-     </p>
-     `
-    
-};
+
 var about=
   {
-    title: "about",
+      aboutapp:
+      {
+          title: "about app",
     heading:"About Us",
      mobile:"8892726625",
      content:
@@ -29,7 +19,19 @@ var about=
      chikbanabara,bangalor-560090<br>
      </p>
      `
-    
+      },
+      aboutp:
+      {
+    title: "about",
+    heading:"About application",
+     mobile:"8892726625",
+     content:
+     `<p>soldevanhalli<br>
+     oppsite to axes bank atm <br>
+     chikbanabara,bangalor-560090<br>
+     </p>
+     `
+      }
     };
 function templet(data)
 {
