@@ -19,13 +19,33 @@ var about=
      `
     
     };
-    
-
+function templet(data)
+{
+	var title=data.title;
+	var heading=data.heading;
+	var mobile=data.mobile;
+	var content=data.content;
+  var htmltem=
+  `
+  <html>
+   <head>
+   <title> ${title}
+	</title>
+	</head>
+	<body>
+	${heading}
+	${mobile}
+	${content}
+	</body>
+	</html>
+`;
+return htmltem;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
+  res.send(templet(about));
 });
 
 app.get('/ui/style.css', function (req, res) {
