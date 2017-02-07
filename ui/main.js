@@ -3,8 +3,15 @@ var text=document.getElementById("text");
 text.innerHTML="value of me ";
 
 var img= document.getElementById('madi');
+var margleft=0;
+function moveRight()
+{
+    margleft+=10;
+    img.style.marginLeft=margleft+'px';
+    
+}
 img.onclick=function()
 {
     var interval=setInterval(moveRight,100)
  
-};
+}
