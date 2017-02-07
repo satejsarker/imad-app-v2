@@ -1,7 +1,8 @@
 console.log('Loaded!');
 var text=document.getElementById("text");
-text.innerHTML="time now  "+d;
 var d=new Date();
+text.innerHTML="time now  "+d;
+
 
 var img= document.getElementById('madi');
 var margleft=0;
