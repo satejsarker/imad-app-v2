@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var text=document.getElementById("text");
 var d=new Date();
-text.innerHTML= ("Month now "+d+1);
+text.innerHTML= ("day:"+(d.getDay()+1)+"month :"+(d.getMonth()+1));
 
 
 var img= document.getElementById('madi');
