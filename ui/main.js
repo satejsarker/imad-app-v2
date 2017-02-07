@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var text=document.getElementById("text");
 var d=new Date();
-text.innerHTML="time now  "+d;
+text.innerHTML= ("time now "+d);
 
 
 var img= document.getElementById('madi');
