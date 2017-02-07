@@ -5,5 +5,6 @@ text.innerHTML="value of me ";
 var img= document.getElementById('madi');
 img.onclick=function()
 {
-    img.style.marginLeft='200px';
+    var interval=setInterval(moveRight,100)
+ 
 };
