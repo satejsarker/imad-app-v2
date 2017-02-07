@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var text=document.getElementById("text");
 var d=new Date();
-text.innerHTML= ("day: "+(d.getDay()+1)+" month : "+(d.getMonth()+1)+" year: "+d.getFullYear());
+text.innerHTML= ("day: "+(d.getDate()+1)+" month : "+(d.getMonth()+1)+" year: "+d.getFullYear());
 
 
 var img= document.getElementById('madi');
