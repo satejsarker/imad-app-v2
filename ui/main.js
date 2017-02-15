@@ -35,7 +35,7 @@ button.onclick=function()
     
     
     //render making request
-    request.open('get','http://satejsarker.imad.hasura-app.io',true);
+    request.open('get','http://satejsarker.imad.hasura-app.io/counter',true);
     request.send('null');
     
     
