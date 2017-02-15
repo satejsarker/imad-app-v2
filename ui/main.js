@@ -21,6 +21,8 @@ button.onclick=function()
 {
     //creating request
     var request= new XMLHttpRequest();
+    request.onreadystatechange=function ()
+    {
     if(request.readyState === XMLHttpRequest.DONE)
     {
         if(request.status === 200)
@@ -32,7 +34,7 @@ button.onclick=function()
     span.innerHTML=counter.toString();
         }
     }
-    
+    };
     
     //render making request
     request.open('get','http://satejsarker.imad.hasura-app.io/counter',true);
