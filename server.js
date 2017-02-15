@@ -61,6 +61,7 @@ return htmltem;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+
 app.get('/:aboutName', function (req, res) {
     var aboutName=req.params.aboutName;
   res.send(templet(about[aboutName]));
@@ -72,10 +73,12 @@ app.get('/ui/style.css', function (req, res) {
 
 var counter=0;
 
-app.get('/c', function(req, res)
+app.get('/c', function (req, res)
 {
    counter=counter+1;
+   
    res.send(counter.toString());
+   
    
 });
 
