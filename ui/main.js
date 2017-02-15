@@ -17,13 +17,26 @@ img.onclick=function()
  
 };
 var button= document.getElementById("button");
-var counter=0;
 button.onclick=function()
 {
-    
-    
-    //render
-    counter+=1;
+    //creating request
+    var request= new XMLHttpRequest();
+    if(request.readyState===XMLHttpRequest.DONE)
+    {
+        if(request.status==200)
+        {
+            
+            var counter=request.responseText;
+            
     var span=document.getElementById("count");
     span.innerHTML=counter.toString();
-}
+        }
+    }
+    
+    
+    //render making request
+    request.open('get','http://satejsarker.imad.hasura-app.io/',ture);
+    request.send('null');
+    
+    
+};
