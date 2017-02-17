@@ -10,7 +10,7 @@ var about =
   {
       'about-pp':
       {
-          title: "about app",
+     title: "about app",
     heading:"About Us",
      mobile:"8892726625",
      content:
@@ -24,8 +24,8 @@ var about =
       {
     title: "about",
     heading:"About application",
-     mobile:"8892726625",
-     content:
+    mobile:"8892726625",
+    content:
      `<p>soldevanhalli<br>
      oppsite to axes bank atm <br>
      chikbanabara,bangalor-560090<br>
@@ -61,6 +61,13 @@ return htmltem;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+var c=0;
+
+app.get('/c', function (req, res)
+{
+   c=c+1;
+   res.send(c.toString());		  
+});
 
 app.get('/:aboutName', function (req, res) {
     var aboutName=req.params.aboutName;
@@ -71,16 +78,6 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-
-app.get('/c', function (req, res)
-{
-   counter=counter+1;
-   
-   res.send(counter.toString());
-   
-   
-});
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
