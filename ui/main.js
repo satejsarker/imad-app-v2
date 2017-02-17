@@ -39,8 +39,24 @@ button.onclick=function()
     };
     
     //render making request
-    request.open('get','http://satejsarker.imad.hasura-app.io/counter',true);
+    request.open('get','http://localhost:8080/c',true);
     request.send('null');
     
     
 };
+//submiting name 
+var nameInput=document.getElementById('name');
+var namei=nameInput.value;
+var submit=document.getElementById('submit_b');
+submit.onclick= function()
+{
+	var names =['name1','name2','satej'];
+	
+	var list='';
+for (var i=0; i<names.length; i++){
+			list +='<li>' + names[i] + '</li>';
+			}
+	var ul=document.getElementById('nameList');
+	ul.innerHTML= list;
+};
+
